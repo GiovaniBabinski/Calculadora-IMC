@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <div class="calculadora">
+        <h1>Calculadora IMC</h1>
+        <hr>
+        <div class="campos">
+            <div class="input">
+                <label><b>Nome </b></label>
+                <input style="margin-left:15px" type="text" id="nome">
+            </div>
+            <div class="input">
+                <label><b>Altura </b></label>
+                <input type="text" id="altura">
+            </div>
+            <div class="input">
+                <label><b>Peso </b></label>
+                <input style="margin-left:35px" type="text" id="peso">
+            </div>
+        </div>
+        <div class="btn-calcular">
+            <button onclick="validarCalculo()" ; id="btn-calc" type="button">Calcular</button>
+        </div>
+        <div class="monitor-dados">
+            <p id="dados"></p>
+            <button onclick="zerarDados()" ; id="reset" type="button">Zerar calculadora</button>
+
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
